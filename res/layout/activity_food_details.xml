@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ItemDisplay" >
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#0081ff"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Cappuccino"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_size_medium"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:scrollbars="none"
+        android:layout_margin="5dp" >
+
+        <LinearLayout
+            android:id="@+id/ll_food_items_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tv_item_description"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:background="#38a0ad"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_xlarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_item_price"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#a9ccc7"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_xlarge"
+        android:textStyle="bold" />
+
+</LinearLayout>
